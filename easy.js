@@ -185,7 +185,7 @@ function ls() {
     return localStorage
 }
 
-function hide() {
+function hide(id) {
     if (id.includes("#") == true) {
         return document.getElementById(id.split("#")[1]).style.display = "none"
     } else {
@@ -193,7 +193,7 @@ function hide() {
     }
 }
 
-function show() {
+function show(id) {
     if (id.includes("#") == true) {
         document.getElementById(id.split("#")[1]).style.display = "block"
     } else {
