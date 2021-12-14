@@ -44,7 +44,6 @@ header {
 header.small{
     font-size: x-large;
     font-weight: bolder;
-    text-transform: none;
     color: rgb(49, 255, 234);
 }
 
