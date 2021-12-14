@@ -1,18 +1,18 @@
 var platfrom = navigator.platfrom
 
-export  function ele_id(name) {
+function ele_id(name) {
     return document.getElementById(name)
 }
 
-export function eles_class(name) {
+function eles_class(name) {
     return document.getElementsByClassName(name)
 }
 
-export function eles_tagname(name) {
+function eles_tagname(name) {
     return document.getElementsByTagName(name)
 }
 
-export function ele(name) {
+function ele(name) {
     if (name.includes("#") == true) {
         return document.getElementById(name.split("#")[1])
     } else if (name.includes(".") == true) {
@@ -22,7 +22,7 @@ export function ele(name) {
     }
 }
 
-export function intext(id) {
+function intext(id) {
     if (id.includes("#") == true) {
         return document.getElementById(id.split("#")[1]).innerText
     } else {
@@ -30,7 +30,7 @@ export function intext(id) {
     }
 }
 
-export function intext_s(id, data) {
+function intext_s(id, data) {
     if (id.includes("#") == true) {
         document.getElementById(id.split("#")[1]).innerText = data
         return "done"
@@ -40,7 +40,7 @@ export function intext_s(id, data) {
     }
 }
 
-export function inhtml(id) {
+function inhtml(id) {
     if (id.includes("#") == true) {
         return document.getElementById(id.split("#")[1]).innerHTML
     } else {
@@ -48,7 +48,7 @@ export function inhtml(id) {
     }
 }
 
-export function inhtml_s(id, data) {
+function inhtml_s(id, data) {
     if (id.includes("#") == true) {
         document.getElementById(id.split("#")[1]).innerHTML = data
         return "done"
@@ -58,7 +58,7 @@ export function inhtml_s(id, data) {
     }
 }
 
-export function src(id){
+function src(id) {
     if (id.includes("#") == true) {
         return document.getElementById(id.split("#")[1]).src
     } else {
@@ -66,7 +66,7 @@ export function src(id){
     }
 }
 
-export function src_s(id, data){
+function src_s(id, data) {
     if (id.includes("#") == true) {
         document.getElementById(id.split("#")[1]).src = data
         return "done"
@@ -76,15 +76,15 @@ export function src_s(id, data){
     }
 }
 
-export function random(num) {
+function random(num) {
     return Math.floor(Math.random() * num)
 }
 
-export function random_img() {
+function random_img() {
     return "https://picsum.photos/200/300?random=" + Math.floor(Math.random() * 100);
 }
 
-export function model(title, text, width, heigth, x_text, backgoundcolor, textcolor) {
+function model(title, text, width, heigth, x_text, backgoundcolor, textcolor) {
     //made by steve
     var close = document.createElement("button")
     close.style.float = "rigth"
@@ -96,7 +96,7 @@ export function model(title, text, width, heigth, x_text, backgoundcolor, textco
     close.style.borderRadius = "100px"
     if (x_text == null) {
         close.innerText = "x"
-    }else{
+    } else {
         close.innerText = x_text
     }
     var div = document.createElement("div")
@@ -135,10 +135,10 @@ export function model(title, text, width, heigth, x_text, backgoundcolor, textco
     titlespan.style.left = "3px"
     titlespan.style.textTransform = "capitalize"
     titlespan.style.fontSize = "x-large"
-    if (title == null){
-        titlespan.innerHTML =  " "
-    }else{
-        titlespan.innerHTML =  title
+    if (title == null) {
+        titlespan.innerHTML = " "
+    } else {
+        titlespan.innerHTML = title
     }
     var span = document.createElement("span")
     span.style.width = "300px"
@@ -162,30 +162,30 @@ export function model(title, text, width, heigth, x_text, backgoundcolor, textco
     window.scrollTo(0, 0)
 }
 
-export function ls_s(id,value){
+function ls_s(id, value) {
     localStorage.setItem(id, value);
     return `item ${id} added`
 }
 
-export function ls_g(id){
+function ls_g(id) {
     return localStorage.getItem(id)
 }
 
-export function ls_r(id){
+function ls_r(id) {
     localStorage.removeItem(id)
     return `item ${id} removed`
 }
 
-export function ls_c(){
+function ls_c() {
     localStorage.clear()
     return "localstoraged is cleared"
 }
 
-export function ls(){
+function ls() {
     return localStorage
 }
 
-export function hide(){
+function hide() {
     if (id.includes("#") == true) {
         return document.getElementById(id.split("#")[1]).style.display = "none"
     } else {
@@ -193,7 +193,7 @@ export function hide(){
     }
 }
 
-export function show(){
+function show() {
     if (id.includes("#") == true) {
         document.getElementById(id.split("#")[1]).style.display = "block"
     } else {
