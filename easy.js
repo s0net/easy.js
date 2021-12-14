@@ -184,3 +184,19 @@ export function ls_c(){
 export function ls(){
     return localStorage
 }
+
+export function hide(){
+    if (id.includes("#") == true) {
+        return document.getElementById(id.split("#")[1]).style.display = "none"
+    } else {
+        return document.getElementsByClassName(id.split(".")[1])[0].style.display = "none"
+    }
+}
+
+export function show(){
+    if (id.includes("#") == true) {
+        document.getElementById(id.split("#")[1]).style.display = "block"
+    } else {
+        return document.getElementsByClassName(id.split(".")[1])[0].style.display = "block"
+    }
+}
