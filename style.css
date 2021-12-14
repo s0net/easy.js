@@ -45,6 +45,7 @@ header.small{
     font-size: x-large;
     font-weight: bolder;
     color: rgb(49, 255, 234);
+    text-transform: capitalize;
 }
 
 code {
