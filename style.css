@@ -76,5 +76,6 @@ section b.cooltext{
 .github{
     text-decoration: none ;
     text-transform: uppercase;
+    font-weight: bolder;
     color: rgb(0, 191, 255);
 }
