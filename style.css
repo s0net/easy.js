@@ -80,3 +80,7 @@ section b.cooltext{
 .all{
     color: blue;
 }
+
+.github{
+    text-decoration:none ;
+}
