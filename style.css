@@ -20,7 +20,7 @@ nav#navbar {
 	position: fixed;
 }
 
-nav#navbar a {
+nav#navbar .nav-link {
 	display: block;
 	border: 5px double white;
     border-radius: 5px;
