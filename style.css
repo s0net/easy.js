@@ -74,6 +74,7 @@ section b.cooltext{
 }
 
 .github{
-    text-decoration:none ;
+    text-decoration: none ;
+    text-transform: uppercase;
     color: rgb(0, 191, 255);
 }
