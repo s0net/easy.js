@@ -42,6 +42,9 @@
       <a href="#model" class="nav-link">
         model
       </a>
+      <a href="#ls" class="nav-link">
+        localstorage
+      </a>
     </nav>
 
     <main id="main-doc">
@@ -57,9 +60,9 @@
           <br />Let us now look a example program : <br />
         </p>
         <code contenteditable="true">
-                    <span class="purple">import</span> <span class="all">*</span> as easyjs from "easy.js"
+                    <span class="purple">import</span> <span class="all">*</span> as easy from "easy.js"
                       <br />
-                    easyjs.model("hello world", "i made this model by &lt;br&gt;using easy.js", "css width", "css heigth",
+                    easy.model("hello world", "i made this model by &lt;br&gt;using easy.js", "css width", "css heigth",
                     "close", "background color", "text color")
                       <br />
                     <span class="code">//you can use null to put the defalt value</span>
@@ -94,9 +97,9 @@
           <br />
           example
           <code contenteditable="true" id="spam">
-                            <span class="purple">import</span> <span class="all">*</span> as easyjs from "easy.js"
+                            <span class="purple">import</span> <span class="all">*</span> as easy from "easy.js"
                               <br />
-                            easyjs.ele("#spam")
+                            easy.ele("#spam")
                               <br />
                             <span class="code">//try this in console</span>
                         </code>
@@ -104,9 +107,9 @@
           <br />
           example
           <code contenteditable="true" class="spam">
-                            <span class="purple">import</span> <span class="all">*</span> as easyjs from "easy.js"
+                            <span class="purple">import</span> <span class="all">*</span> as easy from "easy.js"
                               <br />
-                            easyjs.ele(".spam")
+                            easy.ele(".spam")
                               <br />
                             <span class="code">//try this in console</span>
                         </code>
@@ -119,9 +122,9 @@
           <br />
           example
           <code contenteditable="true" id="eggs">
-                            <span class="purple">import</span> <span class="all">*</span> as easyjs from "easy.js"
+                            <span class="purple">import</span> <span class="all">*</span> as easy from "easy.js"
                               <br />
-                            easyjs.ele_id("eggs")
+                            easy.ele_id("eggs")
                               <br />
                             <span class="code">//try this in console</span>
                         </code>
@@ -135,9 +138,9 @@
           <br />
           example
           <code contenteditable="true" class="eggs">
-                        import <span class="all">*</span> as easyjs from "easy.js"
+                        import <span class="all">*</span> as easy from "easy.js"
                           <br />
-                        easyjs.eles_class("eggs")
+                        easy.eles_class("eggs")
                           <br />
                         <span class="code">//try this in console</span>
                     </code>
@@ -150,9 +153,9 @@
           <br />
           example
           <code contenteditable="true">
-                        <span class="purple">import</span> <span class="all">*</span> as easyjs from "easy.js"
+                        <span class="purple">import</span> <span class="all">*</span> as easy from "easy.js"
                           <br />
-                        easyjs.eles_tagname("code")
+                        easy.eles_tagname("code")
                           <br />
                         <span class="code">//try this in console</span>
                     </code>
@@ -165,9 +168,9 @@
           <br />
           example
           <code contenteditable="true">
-                        import <span class="all">*</span> as easyjs from "easy.js"
+                        import <span class="all">*</span> as easy from "easy.js"
                           <br />
-                        easyjs.intext("#foo")
+                        easy.intext("#foo")
                           <br />
                         <span class="code">//try this in console</span>
                     </code>
@@ -181,9 +184,9 @@
           <br />
           example
           <code contenteditable="true">
-                        <span class="purple">import</span> <span class="all">*</span> as easyjs from "easy.js"
+                        <span class="purple">import</span> <span class="all">*</span> as easy from "easy.js"
                           <br />
-                        easyjs.intext_s(".testy", "text changed")
+                        easy.intext_s(".testy", "text changed")
                           <br />
                         <span class="code">//try this in console</span>
                     </code>
@@ -196,9 +199,9 @@
           <br />
           example
           <code contenteditable="true">
-                        import <span class="all">*</span> as easyjs from "easy.js"
+                        import <span class="all">*</span> as easy from "easy.js"
                           <br />
-                        easyjs.inhtml("#foo")
+                        easy.inhtml("#foo")
                           <br />
                         <span class="code">//try this in console</span>
                     </code>
@@ -212,9 +215,9 @@
           <br />
           example
           <code contenteditable="true">
-                        <span class="purple">import</span> <span class="all">*</span> as easyjs from "easy.js"
+                        <span class="purple">import</span> <span class="all">*</span> as easy from "easy.js"
                           <br />
-                        easyjs.inhtml_s(".la", "cool?")
+                        easy.inhtml_s(".la", "cool?")
                           <br />
                         <span class="code">//try this in console</span>
                     </code>
@@ -227,9 +230,9 @@
           <br />
           example
           <code contenteditable="true">
-                        import <span class="all">*</span> as easyjs from "easy.js"
+                        import <span class="all">*</span> as easy from "easy.js"
                           <br />
-                        easyjs.src("#script")
+                        easy.src("#script")
                           <br />
                         <span class="code">//try this in console</span>
                     </code>
@@ -242,9 +245,9 @@
           <br />
           example
           <code contenteditable="true">
-                        <span class="purple">import</span> <span class="all">*</span> as easyjs from "easy.js"
+                        <span class="purple">import</span> <span class="all">*</span> as easy from "easy.js"
                           <br />
-                        easyjs.src_s(".bar", "./easy.js")
+                        easy.src_s(".bar", "./easy.js")
                           <br />
                         <span class="code">//try this in console</span>
                     </code>
@@ -256,16 +259,16 @@
           random
         </header>
         <p>
-          easyjs.random(till the number you want)
+          easy.random(till the number you want)
         </p>
         <p>
           <br />Let us now look a example program : <br />
         </p>
         this is used to get a random number till the number you want
         <code contenteditable="true">
-                    <span class="purple">import</span> <span class="all">*</span> as easyjs from "easy.js"
+                    <span class="purple">import</span> <span class="all">*</span> as easy from "easy.js"
                       <br />
-                    easyjs.random(100)
+                    easy.random(100)
                       <br />
                     <span class="code">//try this in console</span>
                 </code>
@@ -273,7 +276,7 @@
       <br />
       <section class="main-section" id="random-pic">
         <header>
-          easyjs.random picture
+          easy.random picture
         </header>
         <p>
           is used to get a random picture this will retrun a url
@@ -282,9 +285,9 @@
           <br />Let us now look a example program : <br />
         </p>
         <code contenteditable="true">
-                    <span class="purple">import</span> <span class="all">*</span> as easyjs from "easy.js"
+                    <span class="purple">import</span> <span class="all">*</span> as easy from "easy.js"
                       <br />
-                    easyjs.random_img()
+                    easy.random_img()
                       <br />
                     <span class="code">//try this in console</span>
                 </code>
@@ -301,9 +304,9 @@
           <br />Let us now look a example program : <br />
         </p>
         <code contenteditable="true">
-                    <span class="purple">import</span> <span class="all">*</span> as easyjs from "easy.js"
+                    <span class="purple">import</span> <span class="all">*</span> as easy from "easy.js"
                       <br />
-                    console.log(easyjs.platfrom)
+                    console.log(easy.platfrom)
                       <br />
                     <span class="code">//try this in console</span>
                 </code>
@@ -320,9 +323,9 @@
           <br />Let us us see all the options with the help of a code example : <br />
         </p>
         <code contenteditable="true">
-                    <span class="purple">import</span> <span class="all">*</span> as easyjs from "easy.js"
+                    <span class="purple">import</span> <span class="all">*</span> as easy from "easy.js"
                       <br />
-                    easyjs.model("title", "text to put inside", "width in css like 100vh", "heigth again in css like 600px", "close button text", "backgound color in css", "text color in css you can use hex rgb or css colors")
+                    easy.model("title", "text to put inside", "width in css like 100vh", "heigth again in css like 600px", "close button text", "backgound color in css", "text color in css you can use hex rgb or css colors")
                       <br />
                     <span class="code">//try this in console</span>
                 </code>
@@ -367,6 +370,65 @@
         </header>
         <p>
           in this agrument the give a css color hex rgb css color to put as background color use null to put i as "white"
+        </p>
+      </section>
+      <br />
+      <section class="main-section" id="ls">
+        <header>
+          localstorage
+        </header>
+        <p>
+          easy.js give alternative of localstorage comands
+        </p>
+        <header class="small">
+          ls()
+        </header>
+        <p>
+          this will retrun the localstorage ls()
+          <code>
+            <span class="purple">import</span> <span class="all">*</span> as easy from "easy.js"
+            easy.ls()
+          </code>
+        </p>
+        <header class="small">
+          ls_s()
+        </header>
+        <p>
+          this is used to set somthing in localstorage use ls_s(id, value) this will also retrun a item id set
+          <code>
+            <span class="purple">import</span> <span class="all">*</span> as easy from "easy.js"
+            easy.ls_s(id, value)
+          </code>
+        </p>
+        <header class="small">
+          ls_g()
+        </header>
+        <p>
+          this is used to get somthing from localstorage use ls_g(id) this will retrun the item
+          <code>
+            <span class="purple">import</span> <span class="all">*</span> as easy from "easy.js"
+            easy.ls_g(id)
+          </code>
+        </p>
+        <header class="small">
+          ls_c()
+        </header>
+        <p>
+          this is used to clear the localstorage ls_c()
+          <code>
+            <span class="purple">import</span> <span class="all">*</span> as easy from "easy.js"
+            easy.ls_c()
+          </code>
+        </p>
+        <header class="small">
+          ls_r()
+        </header>
+        <p>
+          this is used to remove a item from localstorage with that id
+          <code>
+            <span class="purple">import</span> <span class="all">*</span> as easy from "easy.js"
+            easy.ls_c(id)
+          </code>
         </p>
       </section>
     </main>

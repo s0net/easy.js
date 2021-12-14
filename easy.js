@@ -162,13 +162,13 @@ export function model(title, text, width, heigth, x_text, backgoundcolor, textco
     window.scrollTo(0, 0)
 }
 
-export function google_icons_cdn(){
-    return "https://fonts.googleapis.com/icon?family=Material+Icons"
-}
-
 export function ls_s(id,value){
     localStorage.setItem(id, value);
     return `item ${id} added`
+}
+
+export function ls_g(id){
+    return localStorage.getItem(id)
 }
 
 export function ls_r(id){
