@@ -42,6 +42,9 @@
             <a href="#platfrom" class="nav-link">
                 platfrom
             </a>
+            <a href="#model" class="nav-link">
+                model
+            </a>
         </nav>
 
         <main id="main-doc">
