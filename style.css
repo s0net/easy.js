@@ -79,3 +79,7 @@ section b.cooltext{
     font-weight: bolder;
     color: rgb(0, 191, 255);
 }
+
+code-tag{
+    color: black;
+}
