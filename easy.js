@@ -200,3 +200,14 @@ function show(id) {
         return document.getElementsByClassName(id.split(".")[1])[0].style.display = "block"
     }
 }
+
+class vr extends HTMLElement {
+
+    connectedCallback() {
+        this.style.borderLeft = `3px solid ${this.color}`;
+        this.style.height = this.height;
+    }
+
+}
+
+customElements.define("vr", vr);
