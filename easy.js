@@ -207,6 +207,7 @@ class code_ele extends HTMLElement {
         this.style.background = "rgb(211, 211, 211)"
         this.style.borderRadius = "3px"
         this.style.padding = "0 3px"
+        this.style.fontFamily = "courier"
     }
 
 }
