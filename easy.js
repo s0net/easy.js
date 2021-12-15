@@ -201,12 +201,14 @@ function show(id) {
     }
 }
 
-class red extends HTMLElement {
+class code_ele extends HTMLElement {
 
     connectedCallback() {
-        this.style.color = "red"
+        this.style.background = "rgb(211, 211, 211)"
+        this.style.borderRadius = "3px"
+        this.style.padding = "0 3px"
     }
 
 }
 
-customElements.define("red-text", red);
+customElements.define("code-tag", code_ele);
