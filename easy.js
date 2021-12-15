@@ -201,7 +201,7 @@ function show(id) {
     }
 }
 
-class vr extends HTMLElement {
+class red extends HTMLElement {
 
     connectedCallback() {
         this.style.color = "red"
@@ -209,4 +209,4 @@ class vr extends HTMLElement {
 
 }
 
-customElements.define("vr", vr);
+customElements.define("red-text", red);
