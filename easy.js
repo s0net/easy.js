@@ -206,6 +206,7 @@ class vr extends HTMLElement {
     connectedCallback() {
         this.style.borderLeft = `3px solid ${this.color}`;
         this.style.height = this.height;
+        this.style.width = "10x"
     }
 
 }
