@@ -8,20 +8,20 @@ body{
     color: white;
 }
 
-div.main-body {
+.main-body {
 	display: grid;
 	grid-template-columns: minmax(300px , auto)1fr;
 	grid-template-areas: "navbar mainContent";
 	grid-gap: 20px;
 }
 
-nav#navbar {
+#navbar {
 	position: absolute;
     top: 10px;
     left:10px;
 }
 
-nav#navbar .nav-link {
+#navbar .nav-link {
 	display: block;
 	border: 5px double white;
     border-radius: 5px;
@@ -32,7 +32,7 @@ nav#navbar .nav-link {
     text-transform: capitalize;
 }
 
-main#main-doc {
+main {
 	grid-area: mainContent;
     border: 3px solid teal;
     padding: 10px;
@@ -59,6 +59,7 @@ code {
     padding: 20px;
     color: black;
     padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 section{
@@ -71,7 +72,7 @@ section{
     color: lightslategray;
 }
 
-section b.cooltext{
+.cooltext{
     font-size: large;
     text-transform: capitalize;
 }
