@@ -89,7 +89,7 @@
           <b class="cooltext">
             using easy.js you can get elements by DOM much easier
             <br>
-            easy.js give ten options alternatives for DOM
+            easy.js give 12 options alternatives for DOM
           </b>
           <br>
         <header class="small">
@@ -104,7 +104,7 @@
             <br>
             <span class="code">//try this in console</span>
           </code>
-          use ele(".id") to get an element by id(first element with that class)
+          use ele(".id") to get an elements by id
           <br>
           example
           <code contenteditable="true" class="spam">
@@ -232,6 +232,34 @@
                           <br>
                         <span class="code">//try this in console</span>
                     </code>
+        </p>
+        <header class="small">
+          val()
+        </header>
+        <p>
+          use val(".classname"/"#id") to get the value arrtibute of a element with a id/classname
+          <br>
+          example
+          <code contenteditable="true">
+            val(".noice")
+            <br>
+            <span class="code">//try this in console</span>
+            <input type="submit" class="noice" style="display: none;" value="the value in noice">
+          </code>
+        </p>
+        <header class="small">
+          val_s()
+        </header>
+        <p>
+          use val_s(".classname"/"#id") to set the value arrtibute of a element with a id/classname
+          <br>
+          example
+          <code contenteditable="true">
+            val_s("#noice","the value is nice")
+            <br>
+            <span class="code">//try this in console</span>
+            <input type="submit" id="noice" style="display: none;" value="the value in noice">
+          </code>
         </p>
       </section>
       <br>
@@ -413,7 +441,7 @@
         </header>
         <p>
           <br>use this to show a element from a display none to disply block<br>
-          use show(".classname") to use a class (first element with that class name) or use show("#id") to use id 
+          use show(".classname") to use a class or use show("#id") to use id 
         </p>
         <code contenteditable="true" id="element">
           show("#cool")
