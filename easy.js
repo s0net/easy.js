@@ -232,7 +232,8 @@ class comment extends HTMLElement {
 class time extends HTMLElement{
 
     connectedCallback(){
-        this.innerText = `${Date.getDate()}/${Date.getMonth()}/${Date.getFullYear()}`
+        var d = new Date()
+        this.innerText = `${d.getDate()}/${d.getMonth()}/${d.getFullYear()}`
     }
 
 }
