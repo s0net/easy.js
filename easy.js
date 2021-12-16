@@ -221,6 +221,7 @@ class code_ele extends HTMLElement {
     }
 
 }
+
 class comment extends HTMLElement {
 
     connectedCallback() {
@@ -228,7 +229,14 @@ class comment extends HTMLElement {
     }
 
 }
+class time extends HTMLElement{
+
+    connectedCallback(){
+        this.innerText = `${Date.getDate()}/${Date.getMonth()}/${Date.getFullYear()}`
+    }
+
+}
 
 customElements.define("comment-tag", comment);
-
 customElements.define("code-tag", code_ele);
+customElements.define("time-tag", time)
