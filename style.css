@@ -18,7 +18,8 @@ div.main-body {
 nav#navbar {
 	position: absolute;
     top: 10px;
-    left:10px
+    left:10px;
+    overflow: scroll;
 }
 
 nav#navbar .nav-link {
