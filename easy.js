@@ -221,5 +221,14 @@ class code_ele extends HTMLElement {
     }
 
 }
+class comment extends HTMLElement {
+
+    connectedCallback() {
+        this.style.color = "lightslategray"
+    }
+
+}
+
+customElements.define("comment-tag", comment);
 
 customElements.define("code-tag", code_ele);
