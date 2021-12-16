@@ -241,3 +241,7 @@ class time extends HTMLElement{
 customElements.define("comment-tag", comment);
 customElements.define("code-tag", code_ele);
 customElements.define("time-tag", time)
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+});
