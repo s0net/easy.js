@@ -16,8 +16,9 @@ div.main-body {
 }
 
 nav#navbar {
-	grid-area: navbar;
-	position: fixed;
+	position: absolute;
+    top: 10px;
+    left:10px
 }
 
 nav#navbar .nav-link {
