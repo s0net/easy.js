@@ -76,14 +76,6 @@ function src_s(id, data) {
     }
 }
 
-function val(id) {
-    if (id.includes("#") == true) {
-        return  document.getElementById(id.split("#")[1]).value
-    } else {
-        return document.getElementsByClassName(id.split(".")[1])[0].value
-    }
-}
-
 function val_s(id, data) {
     if (id.includes("#") == true) {
         document.getElementById(id.split("#")[1]).value = data
