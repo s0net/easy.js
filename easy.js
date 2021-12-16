@@ -91,7 +91,7 @@ function random(num) {
 }
 
 function random_img() {
-    return "https://picsum.photos/200/300?random=" + Math.floor(Math.random() * 100);
+    return `https://picsum.photos/200/300?random=${Math.floor(Math.random() * 100)}`
 }
 
 function model(title, text, width, heigth, x_text, backgoundcolor, textcolor) {
@@ -241,7 +241,3 @@ class time extends HTMLElement{
 customElements.define("comment-tag", comment);
 customElements.define("code-tag", code_ele);
 customElements.define("time-tag", time)
-
-window.addEventListener('DOMContentLoaded', (event) => {
-    console.log('DOM fully loaded and parsed');
-});
