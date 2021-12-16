@@ -78,9 +78,9 @@ function src_s(id, data) {
 
 function val(id) {
     if (id.includes("#") == true) {
-        return  document.getElementById(id.split("#")[1])
+        return  document.getElementById(id.split("#")[1]).value
     } else {
-        return  document.getElementsByClassName(id.split(".")[1]).value
+        return document.getElementsByClassName(id.split(".")[1]).value
     }
 }
 
