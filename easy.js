@@ -197,9 +197,9 @@ function ls() {
 
 function hide(id) {
     if (id.includes("#") == true) {
-        return document.getElementById(id.split("#")[1]).style.display = "none"
+        document.getElementById(id.split("#")[1]).style.display = "none"
     } else {
-        return document.getElementsByClassName(id.split(".")[1])[0].style.display = "none"
+        document.getElementsByClassName(id.split(".")[1])[0].style.display = "none"
     }
 }
 
@@ -207,7 +207,7 @@ function show(id) {
     if (id.includes("#") == true) {
         document.getElementById(id.split("#")[1]).style.display = "block"
     } else {
-        return document.getElementsByClassName(id.split(".")[1])[0].style.display = "block"
+        document.getElementsByClassName(id.split(".")[1])[0].style.display = "block"
     }
 }
 
