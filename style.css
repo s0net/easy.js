@@ -35,6 +35,7 @@ nav#navbar .nav-link {
 main#main-doc {
 	grid-area: mainContent;
     border: 3px solid teal;
+    padding: 10px;
 }
 
 header {
