@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site":"easy-js-doc",
     "public": "public",
     "ignore": [
       "firebase.json",
