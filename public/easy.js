@@ -257,26 +257,7 @@ class type_Writer extends HTMLElement {
 customElements.define("comment-tag", comment);
 customElements.define("code-tag", code_ele);
 customElements.define("time-tag", time)
-customElements.define("type-writer", type_Writer)
 
 function link(url) {
     window.open(url, '_blank');
-}
-
-function typeWriter(name, txt) {
-    var element
-    if (name.includes("#") == true) {
-        element = document.getElementById(name.split("#")[1])
-    } else if (name.includes(".") == true) {
-        element = document.getElementsByClassName(name.split(".")[1])
-    } else {
-        return "put '.' for first element with the class name example .classname else put a # for a element by id example #id"
-    }
-    var i = 0;
-    var speed = 50;
-    if (i < new String(txt).length) {
-        element.innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-    }
 }
