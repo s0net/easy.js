@@ -229,11 +229,27 @@ class comment extends HTMLElement {
     }
 
 }
-class time extends HTMLElement{
 
-    connectedCallback(){
+class time extends HTMLElement {
+
+    connectedCallback() {
         var d = new Date()
         this.innerText = `${d.getDate()}/${d.getMonth()}/${d.getFullYear()}`
+    }
+
+}
+
+class typeWriter extends HTMLElement {
+
+    connectedCallback() {
+        var txt = this.innerText;
+        var speed = 50;
+
+        if (i < txt.length) {
+            this.innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
     }
 
 }
@@ -241,7 +257,18 @@ class time extends HTMLElement{
 customElements.define("comment-tag", comment);
 customElements.define("code-tag", code_ele);
 customElements.define("time-tag", time)
+customElements.define("type-writer", typeWriter)
 
-function link(url){
+function link(url) {
     window.open(url, '_blank');
+}
+
+function typeWriter(element, txt) {
+    var i = 0;
+    var speed = 50;
+    if (i < txt.length) {
+        element.innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
 }
