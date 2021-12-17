@@ -1,0 +1,89 @@
+* {
+    font-family: 'Franklin Gothic Medium';
+    font-size: medium
+}
+
+body{
+    background-color: #222;
+    color: white;
+}
+
+.main-body {
+	display: grid;
+	grid-template-columns: minmax(300px , auto)1fr;
+	grid-template-areas: "navbar mainContent";
+	grid-gap: 20px;
+}
+
+#navbar {
+	position: absolute;
+    top: 10px;
+    left:10px;
+}
+
+#navbar .nav-link {
+	display: block;
+	border: 5px double white;
+    border-radius: 5px;
+	padding: 10px;
+	margin: 10px 0;
+	text-decoration: none;
+	color: white;
+    text-transform: capitalize;
+}
+
+main {
+	grid-area: mainContent;
+    border: 3px solid teal;
+    padding: 10px;
+}
+
+header {
+	font-size: xx-large;
+    text-transform: capitalize;
+	font-weight: bolder;
+}
+
+header.small{
+    font-size: x-large;
+    font-weight: bolder;
+    color: rgb(49, 255, 234);
+    text-transform: capitalize;
+}
+
+code {
+    border-radius: 5px;
+    border: 6px solid black;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    padding: 20px;
+    color: black;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+section{
+    border-radius: 10px;
+    border: 3px solid teal;
+    padding: 15px;
+}
+
+.code{
+    color: lightslategray;
+}
+
+.cooltext{
+    font-size: large;
+    text-transform: capitalize;
+}
+
+.github{
+    text-decoration: none ;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgb(0, 191, 255);
+}
+
+code-tag{
+    color: black;
+}
