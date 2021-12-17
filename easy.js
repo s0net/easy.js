@@ -239,7 +239,7 @@ class time extends HTMLElement {
 
 }
 
-class typeWriter extends HTMLElement {
+class type_Writer extends HTMLElement {
 
     connectedCallback() {
         var txt = this.innerText;
@@ -257,7 +257,7 @@ class typeWriter extends HTMLElement {
 customElements.define("comment-tag", comment);
 customElements.define("code-tag", code_ele);
 customElements.define("time-tag", time)
-customElements.define("type-writer", typeWriter)
+customElements.define("type-writer", type_Writer)
 
 function link(url) {
     window.open(url, '_blank');
