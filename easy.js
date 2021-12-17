@@ -241,3 +241,7 @@ class time extends HTMLElement{
 customElements.define("comment-tag", comment);
 customElements.define("code-tag", code_ele);
 customElements.define("time-tag", time)
+
+function link(url){
+    window.open(url, '_blank');
+}
