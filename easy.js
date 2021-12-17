@@ -266,7 +266,7 @@ function link(url) {
 function typeWriter(element, txt) {
     var i = 0;
     var speed = 50;
-    if (i < txt.length) {
+    if (i < new String(txt).length) {
         element.innerHTML += txt.charAt(i);
         i++;
         setTimeout(typeWriter, speed);
