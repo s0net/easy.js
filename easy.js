@@ -246,3 +246,21 @@ customElements.define("time-tag", time)
 function link(url) {
     window.open(url, '_blank');
 }
+
+function notify(text) {
+    if (!("Notification" in window)) {
+      return ("This browser does not support desktop notification");
+    }
+  
+    else if (Notification.permission === "granted") {
+      var notification = new Notification(text);
+    }
+  
+    else if (Notification.permission !== "denied") {
+      Notification.requestPermission().then(function (permission) {
+        if (permission === "granted") {
+          var notification = new Notification(text);
+        }
+      });
+    }
+  }
