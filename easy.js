@@ -239,21 +239,6 @@ class time extends HTMLElement {
 
 }
 
-class type_Writer extends HTMLElement {
-
-    connectedCallback() {
-        var txt = this.innerText;
-        var speed = 50;
-
-        if (i < txt.length) {
-            this.innerHTML += txt.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed);
-        }
-    }
-
-}
-
 customElements.define("comment-tag", comment);
 customElements.define("code-tag", code_ele);
 customElements.define("time-tag", time)
