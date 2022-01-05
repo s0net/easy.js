@@ -1,100 +1,30 @@
 var platfrom = navigator.platfrom
 
-function ele_id(name) {
-    return document.getElementById(name)
+var grab = function (name) {
+    return document.querySelector(name)
 }
 
-function eles_class(name) {
-    return document.getElementsByClassName(name)
+var intext = function (name) {
+    return grab(name).innerText
 }
 
-function eles_tagname(name) {
-    return document.getElementsByTagName(name)
+var inhtml = function (name){
+    return grab(name).innerHTML
 }
 
-function ele(name) {
-    if (name.includes("#") == true) {
-        return document.getElementById(name.split("#")[1])
-    } else if (name.includes(".") == true) {
-        return document.getElementsByClassName(name.split(".")[1])
-    } else {
-        return "put '.' for first element with the class name example .classname else put a # for a element by id example #id"
-    }
+var src = function (id) {
+    return grab(name).src
 }
 
-function intext(id) {
-    if (id.includes("#") == true) {
-        return document.getElementById(id.split("#")[1]).innerText
-    } else {
-        return document.getElementsByClassName(id.split(".")[1]).innerText
-    }
+var val = function (name) {
+    return grab(name).value
 }
 
-function intext_s(id, data) {
-    if (id.includes("#") == true) {
-        document.getElementById(id.split("#")[1]).innerText = data
-        return "done"
-    } else {
-        document.getElementsByClassName(id.split(".")[1]).innerText = data
-        return "done"
-    }
-}
-
-function inhtml(id) {
-    if (id.includes("#") == true) {
-        return document.getElementById(id.split("#")[1]).innerHTML
-    } else {
-        return document.getElementsByClassName(id.split(".")[1]).innerHTML
-    }
-}
-
-function inhtml_s(id, data) {
-    if (id.includes("#") == true) {
-        document.getElementById(id.split("#")[1]).innerHTML = data
-        return "done"
-    } else {
-        document.getElementsByClassName(id.split(".")[1])[0].innerHTML = data
-        return "done"
-    }
-}
-
-function src(id) {
-    if (id.includes("#") == true) {
-        return document.getElementById(id.split("#")[1]).src
-    } else {
-        return document.getElementsByClassName(id.split(".")[1]).src
-    }
-}
-
-function src_s(id, data) {
-    if (id.includes("#") == true) {
-        document.getElementById(id.split("#")[1]).src = data
-        return "done"
-    } else {
-        document.getElementsByClassName(id.split(".")[1]).src = data
-        return "done"
-    }
-}
-
-function val_s(id, data) {
-    if (id.includes("#") == true) {
-        document.getElementById(id.split("#")[1]).value = data
-        return "done"
-    } else {
-        document.getElementsByClassName(id.split(".")[1]).value = data
-        return "done"
-    }
-}
-
-function random(num) {
+var random = function (num) {
     return Math.floor(Math.random() * num)
 }
 
-function random_img() {
-    return `https://picsum.photos/200/300?random=${Math.floor(Math.random() * 100)}`
-}
-
-function model(title, text, width, heigth, x_text, backgoundcolor, textcolor) {
+function model(title, text, width, heigth, closetext, backgoundcolor, textcolor) {
     //made by steve
     var close = document.createElement("button")
     close.style.float = "rigth"
@@ -130,7 +60,6 @@ function model(title, text, width, heigth, x_text, backgoundcolor, textcolor) {
     } else {
         div.style.color = textcolor
     }
-    div.style.border = "4px solid teal"
     div.style.borderRadius = "10px"
     div.style.margin = "0"
     div.style.position = "absolute"
@@ -138,7 +67,6 @@ function model(title, text, width, heigth, x_text, backgoundcolor, textcolor) {
     div.style.left = "50%"
     div.style.transform = "translate(-50%, -50%)"
     div.style.zIndex = "999"
-    div.style.fontFamily = "Franklin Gothic Medium"
     var titlespan = document.createElement("span")
     titlespan.style.position = "absolute"
     titlespan.style.top = "3px"
@@ -263,4 +191,4 @@ function notify(text) {
         }
       });
     }
-  }
+}
