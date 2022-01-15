@@ -153,7 +153,7 @@ class time extends HTMLElement {
 
     connectedCallback() {
         var d = new Date()
-        this.innerText = `${d.getDate()}/${d.getMonth()}/${d.getFullYear()}`
+        this.innerText = `${d.getDate()}/${d.getMonth() + 1}/${d.getFullYear()}`
     }
 
 }
