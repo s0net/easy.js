@@ -123,7 +123,7 @@ class ls {
 }
 
 function hide(id) {
-    document.querySelector(id).style.display = "nonw"
+    document.querySelector(id).style.display = "none"
 }
 
 function show(id) {
